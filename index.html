@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
+<header class="site-header">
     <h1>City Explorer</h1>
 
-    <nav>
+    <nav class="menu">
         <a href="#destinatii">Destinatii</a>
         <a href="#planifica">Planifica</a>
         <a href="#recomandari">Recomandari</a>
@@ -23,40 +24,44 @@
     <section id="destinatii">
         <h2>Destinatii</h2>
 
-        <article>
-            <h3>Milano</h3>
-            <p>Italia</p>
-            <p>Oras cunoscut pentru strazile sale si peisajele frumoase.</p>
-            <p>Durata recomandata: 4 zile</p>
-        </article>
+        <div class="cards">
 
-        <article>
-            <h3>Roma</h3>
-            <p>Italia</p>
-            <p>Oras cunoscut pentru monumentele si istoria sa.</p>
-            <p>Durata recomandata: 4 zile</p>
-        </article>
+            <article class="card">
+                <h3>Londra</h3>
+                <p>Anglia</p>
+                <p>Oras cunoscut pentru istorie si numeroase obiective turistice.</p>
+                <p>Durata recomandata: 5 zile</p>
+            </article>
 
-        <article>
-            <h3>Paris</h3>
-            <p>Franta</p>
-            <p>Oras cunoscut pentru arhitectura si obiective turistice.</p>
-            <p>Durata recomandata: 3 zile</p>
-        </article>
+            <article class="card featured">
+                <h3>Praga</h3>
+                <p>Cehia</p>
+                <p>Oras cunoscut pentru centrul istoric si arhitectura sa.</p>
+                <p>Durata recomandata: 3 zile</p>
+            </article>
 
-        <article>
-            <h3>Barcelona</h3>
-            <p>Spania</p>
-            <p>Capitala Spaniei, cunoscuta pentru cultura si gastronomie.</p>
-            <p>Durata recomandata: 3 zile</p>
-        </article>
+            <article class="card">
+                <h3>Atena</h3>
+                <p>Grecia</p>
+                <p>Oras cunoscut pentru istoria si monumentele sale antice.</p>
+                <p>Durata recomandata: 4 zile</p>
+            </article>
 
-        <article>
-            <h3>Berlin</h3>
-            <p>Germania</p>
-            <p>Oras cunoscut pentru arhitectura si istorie.</p>
-            <p>Durata recomandata: 3 zile</p>
-        </article>
+            <article class="card">
+                <h3>Berlin</h3>
+                <p>Germania</p>
+                <p>Capitala Germaniei, cunoscuta pentru cultura si istorie.</p>
+                <p>Durata recomandata: 4 zile</p>
+            </article>
+
+            <article class="card">
+                <h3>Amsterdam</h3>
+                <p>Olanda</p>
+                <p>Oras cunoscut pentru canale, muzee si arhitectura.</p>
+                <p>Durata recomandata: 3 zile</p>
+            </article>
+
+        </div>
     </section>
 
     <section id="planifica">
@@ -69,11 +74,11 @@
             <label for="destination">Destinatie</label>
             <select id="destination" name="destination">
                 <option value="">Alege...</option>
-                <option value="Lisabona">Lisabona</option>
-                <option value="Roma">Roma</option>
-                <option value="Paris">Paris</option>
-                <option value="Madrid">Madrid</option>
-                <option value="Viena">Viena</option>
+                <option value="Londra">Londra</option>
+                <option value="Praga">Praga</option>
+                <option value="Atena">Atena</option>
+                <option value="Berlin">Berlin</option>
+                <option value="Amsterdam">Amsterdam</option>
             </select>
 
             <label for="days">Numar de zile</label>
@@ -87,9 +92,9 @@
         <h2>Recomandari</h2>
 
         <ul>
-            <li>Rezerva cazarea din timp.</li>
-            <li>Verifica vremea inainte de plecare.</li>
-            <li>Informeaza-te despre transportul public.</li>
+            <li>Pregateste documentele necesare inainte de calatorie.</li>
+            <li>Planifica principalele obiective pe care vrei sa le vizitezi.</li>
+            <li>Verifica optiunile de transport din oras.</li>
         </ul>
     </section>
 
